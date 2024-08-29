@@ -1,8 +1,8 @@
-streamlit
-nltk
+streamlit==1.18.1
+nltk==3.6.7
 scikit-learn==1.2.2
-Pillow
-numpy
-pandas
-wordcloud
+Pillow==9.0.1
+numpy==1.21.5
+pandas==1.3.5
+wordcloud==1.8.1
 
