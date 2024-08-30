@@ -49,8 +49,6 @@ st.title('Email or Spam Classifier')
 
 input_sms = st.text_area('Enter the Message ')
 
-option = st.selectbox("You Got Message From :-", ["Via Email ", "Via SMS", "other"])
-
 
 if st.button('Click to Predict'):
     # Preprocess
@@ -63,7 +61,7 @@ if st.button('Click to Predict'):
     # Show
 
     if result == 1:
-        st.header("Spam")
+        st.header("spam")
     else:
-        st.header('Not Spam')
+        st.header('ham')
 
