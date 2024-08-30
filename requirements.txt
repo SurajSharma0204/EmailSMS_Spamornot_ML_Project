@@ -12,5 +12,4 @@ scikit-learn==1.0.2
 xgboost==1.6.1
 setuptools>=42
 wheel
-distutils
 pip>=24.2
