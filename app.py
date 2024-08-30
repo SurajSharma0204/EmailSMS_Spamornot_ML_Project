@@ -1,31 +1,69 @@
-import streamlit as st
+import streamlit as st 
 import pickle
+import sklearn
+from nltk.corpus import stopwords
+import nltk 
+import string 
+from nltk.stem.porter import PorterStemmer
+ps = PorterStemmer()
 
-# Load the model and vectorizer
-with open('model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+nltk.download('punkt')
+nltk.download('stopwords')
 
-with open('vectorizer.pkl', 'rb') as vec_file:
-    vectorizer = pickle.load(vec_file)
 
-# Streamlit app interface
-st.title("Spam or Ham Classifier")
 
-# Text input from the user
-user_input = st.text_area("Enter a message:")
 
-if st.button("Classify"):
-    # Preprocessing user input
-    input_cleaned = user_input.lower()
+def transform_text(text):
+    text = text.lower()
+    
+    text= nltk.word_tokenize(text)
+    y = []
+    for i in text:
+        if i.isalnum():
+            y.append(i)
+            
+    
+    text = y[:]
+    y.clear()
+    
+    for i in text:
+        if i not in stopwords.words('english') and  i not in string.punctuation:
+            y.append(i)
+            
+    text = y[:]       
+    y.clear()
+    
+    for i in text:
+        y.append(ps.stem(i))
+        
+    
+    return " ".join(y)
 
-    # Vectorizing the input
-    input_vec = vectorizer.transform([input_cleaned])
 
-    # Predicting the label
-    prediction = model.predict(input_vec)[0]
 
-    # Displaying the result
-    if prediction == 'spam':
-        st.write("This message is **Spam**.")
+tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+
+
+st.title('Email or Spam Classifier')
+
+input_sms = st.text_area('Enter the Message ')
+
+option = st.selectbox("You Got Message From :-", ["Via Email ", "Via SMS", "other"])
+
+
+if st.button('Click to Predict'):
+    # Preprocess
+    transform_sms = transform_text(input_sms)
+    # Vectorize
+    vector_input = tfidf.transform([transform_sms])
+    # Predict
+    result = model.predict(vector_input)[0]
+
+    # Show
+
+    if result == 1:
+        st.header("Spam")
     else:
-        st.write("This message is **Ham**.")
+        st.header('Not Spam')
+
