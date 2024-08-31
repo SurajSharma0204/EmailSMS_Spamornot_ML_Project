@@ -1,0 +1,10 @@
+2024-08-30 22:59:33,939 - INFO - Models and vectorizer loaded successfully.
+2024-08-30 22:59:40,121 - INFO - Models and vectorizer loaded successfully.
+2024-08-30 22:59:40,344 - INFO - Models and vectorizer loaded successfully.
+2024-08-30 22:59:40,350 - INFO - Transforming text...
+2024-08-30 22:59:40,439 - INFO - Text transformation complete.
+2024-08-30 22:59:40,441 - INFO - User input: Hello
+2024-08-30 22:59:40,443 - INFO - Transformed input: hello
+2024-08-30 22:59:40,459 - INFO - Text vectorization complete.
+2024-08-30 22:59:40,463 - INFO - Prediction result: 0
+2024-08-30 22:59:40,466 - INFO - Displayed result: Ham
