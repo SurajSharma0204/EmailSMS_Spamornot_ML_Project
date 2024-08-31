@@ -61,6 +61,8 @@ try:
     logging.info("Models and vectorizer loaded successfully.")
 except Exception as e:
     logging.error(f"Error loading models or vectorizer: {e}")
+    st.error("Error loading models or vectorizer. Please check the logs for details.")
+    st.stop()
 
 # Streamlit app
 st.title('Email or SMS Classifier')
@@ -79,6 +81,10 @@ if st.button('Click to Predict'):
         logging.info("Text vectorization complete.")
     except Exception as e:
         logging.error(f"Error during vectorization: {e}")
+        st.error("Error during vectorization. Please check the logs for details.")
+        st.stop()
+
+    result = None    
 
     # Predict
     try:
@@ -86,11 +92,14 @@ if st.button('Click to Predict'):
         logging.info(f"Prediction result: {result}")
     except Exception as e:
         logging.error(f"Error during prediction: {e}")
+        st.error("Error during prediction. Please check the logs for details.")
+        st.stop()
 
     # Show results
-    if result == 1:
-        st.header("Spam")
-    else:
-        st.header('Ham')
+    if result is not None:
+        if result == 1:
+            st.header("Spam")
+        else:
+            st.header('Ham')
 
-    logging.info(f"Displayed result: {'Spam' if result == 1 else 'Ham'}")
+        logging.info(f"Displayed result: {'Spam' if result == 1 else 'Ham'}")

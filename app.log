@@ -8,3 +8,49 @@
 2024-08-30 22:59:40,459 - INFO - Text vectorization complete.
 2024-08-30 22:59:40,463 - INFO - Prediction result: 0
 2024-08-30 22:59:40,466 - INFO - Displayed result: Ham
+2024-08-31 16:52:15,858 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 16:52:24,519 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 16:52:24,747 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 16:52:24,753 - INFO - Transforming text...
+2024-08-31 16:52:24,870 - INFO - Text transformation complete.
+2024-08-31 16:52:24,871 - INFO - User input: hell
+2024-08-31 16:52:24,872 - INFO - Transformed input: hell
+2024-08-31 16:52:24,881 - INFO - Text vectorization complete.
+2024-08-31 16:52:24,882 - ERROR - Error during prediction: This MultinomialNB instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-08-31 17:03:10,518 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:03:15,651 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:03:15,870 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:03:15,874 - INFO - Transforming text...
+2024-08-31 17:03:15,969 - INFO - Text transformation complete.
+2024-08-31 17:03:15,970 - INFO - User input: Hello
+2024-08-31 17:03:15,971 - INFO - Transformed input: hello
+2024-08-31 17:03:15,972 - INFO - Text vectorization complete.
+2024-08-31 17:03:15,973 - ERROR - Error during prediction: This MultinomialNB instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-08-31 17:29:39,678 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:29:50,419 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:29:50,637 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:29:50,641 - INFO - Transforming text...
+2024-08-31 17:29:50,702 - INFO - Text transformation complete.
+2024-08-31 17:29:50,703 - INFO - User input: Himgiri
+2024-08-31 17:29:50,703 - INFO - Transformed input: himgiri
+2024-08-31 17:29:50,710 - INFO - Text vectorization complete.
+2024-08-31 17:29:50,710 - ERROR - Error during prediction: This MultinomialNB instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-08-31 17:41:20,637 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:41:24,892 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:41:25,116 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:41:25,122 - INFO - Transforming text...
+2024-08-31 17:41:25,174 - INFO - Text transformation complete.
+2024-08-31 17:41:25,175 - INFO - User input: yo
+2024-08-31 17:41:25,176 - INFO - Transformed input: yo
+2024-08-31 17:41:25,178 - INFO - Text vectorization complete.
+2024-08-31 17:41:25,179 - ERROR - Error during prediction: This MultinomialNB instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-08-31 17:48:46,768 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:48:55,628 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:48:55,849 - INFO - Models and vectorizer loaded successfully.
+2024-08-31 17:48:55,851 - INFO - Transforming text...
+2024-08-31 17:48:55,902 - INFO - Text transformation complete.
+2024-08-31 17:48:55,903 - INFO - User input: hi
+2024-08-31 17:48:55,904 - INFO - Transformed input: hi
+2024-08-31 17:48:55,910 - INFO - Text vectorization complete.
+2024-08-31 17:48:55,912 - INFO - Prediction result: 0
+2024-08-31 17:48:55,913 - INFO - Displayed result: Ham
