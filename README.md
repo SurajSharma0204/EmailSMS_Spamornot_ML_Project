@@ -9,4 +9,6 @@ Text Preprocessing: Uses NLTK for text normalization, including tokenization, st
 Feature Extraction: Utilizes CountVectorizer and TfidfVectorizer for transforming text data into numerical features.
 Model Training: Trains multiple classifiers such as MultinomialNB, Logistic Regression, and SVM, with ensemble methods including Voting and Stacking Classifiers.
 Evaluation: Provides accuracy and precision metrics for model performance.
-Deployment: Deploys the model as an interactive web application using Streamlit.
+Deployment: Deploys the model as an interactive web application using Streamlit(https://msgchecking.streamlit.app/).
+
+Overall, EmailSMS spam classifier serves to improve the efficiency, security, and user experience of messaging systems by effectively managing and filtering out spam messages.
