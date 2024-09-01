@@ -1,4 +1,7 @@
 # EmailSMS_Spamornot_ML_Project
+
+Hi, My name is Suraj Sharma and i have prepared a spam classifer machine learning project.
+
 This project aims to build a machine learning model to classify text messages or emails as either "spam" or "ham" (non-spam). It leverages various machine learning algorithms and preprocessing techniques to achieve accurate classification. The project includes an end-to-end pipeline from data preprocessing to model deployment using Streamlit.
 
 I tried to use the entire project in python 3.8. However, there were compatibility issues with streamlit and dependencies. Then I used 3.12 versions and updated dependencies. Now it worked.
